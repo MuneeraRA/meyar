@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8f181c</color>
+    <color name="colorPrimaryDark">#620508</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#8f181c</color>
+
+    <color name="colorPrimaryText">#323131</color>
+    <color name="gray_text_color">#a9a8a8</color>
+    <!--<color name="gray_tint_color">#a9a8a8</color>-->
+    <color name="gray_tint_color">#b4b4b4</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#f2e831</color>
+
+    <color name="color_form_hint">#48484d</color>
+
+    <color name="profile_label_text_color">#ababab</color>
+    <color name="profile_edit_text_text_color">#48484d</color>
+    <color name="profile_edit_under_line_color">#e1e1e1</color>
+
+    <color name="red">#ff0000</color>
+</resources>

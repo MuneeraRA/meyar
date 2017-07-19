@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "176437661415",
+    "firebase_url": "https://meyar-f75df.firebaseio.com",
+    "project_id": "meyar-f75df",
+    "storage_bucket": "meyar-f75df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176437661415:android:27431802cd7d4ebb",
+        "android_client_info": {
+          "package_name": "app.firstcode.meyar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176437661415-ee8hshllntjv71m9g4f0sqjsalqdoep8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.firstcode.meyar",
+            "certificate_hash": "a082ca0d112f263210c16ccc3929f69e9a643942"
+          }
+        },
+        {
+          "client_id": "176437661415-h461h3us92ik8q86evh3001ia7e1kqeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVCeG62OJB9XPL6mNldPtZJYyvf6u7LaM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176437661415-h461h3us92ik8q86evh3001ia7e1kqeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

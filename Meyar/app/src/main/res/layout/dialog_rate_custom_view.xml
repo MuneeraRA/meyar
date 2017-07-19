@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="أرجاء ضع تقيمك هنا"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/app_text_size" />
+
+
+        <com.whinc.widget.ratingbar.RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layoutDirection="ltr"
+            app:rb_empty="@drawable/empty"
+            app:rb_fill="@drawable/fill"
+            app:rb_max_count="5"
+            app:rb_space="0dp" />
+
+        <TextView
+            android:id="@+id/dialog_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="أعتماد التقيم"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/app_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

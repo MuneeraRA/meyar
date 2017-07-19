@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_favorite_contractors">المقاولين المفضلين</string>
+    <string name="nav_support">الدعم والمراسلة</string>
+    <string name="nav_login">تسجيل الدخول</string>
+    <string name="nav_logout">تسجيل الخروج</string>
+    <string name="nav_register_as_contractor">التسجيل كمقاول</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="welcome_text">مرحبا بكم .... قم باختيار احد التصنيفات الخاصة بمعيار</string>
+
+</resources>

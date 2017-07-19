@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/edit_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_edit"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchorGravity="bottom|right|end"></android.support.design.widget.FloatingActionButton>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle" />
+
+
+                    <ImageView
+                        android:id="@+id/profile_image_placeholder"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_upload"
+                        android:tint="@color/white" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/new_account_form_padding_right"
+                    android:paddingRight="@dimen/new_account_form_padding_right">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_profile"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_name"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/contractor_name_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="textPersonName"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="ضياء"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_mail"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_mail"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/contractor_email_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="textEmailAddress"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="Diaa.skaik@gmail.com"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/contractor_email_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_mail"-->
+                        <!--android:inputType="textEmailAddress"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_telephone"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_phone"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/contractor_number_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="phone"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/contractor_number_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_telephone"-->
+                        <!--android:inputType="phone"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/new_account_form_image_width"-->
+                    <!--android:layout_height="@dimen/new_account_form_image_height"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@drawable/ic_lock"-->
+                    <!--android:tint="@color/gray_tint_color" />-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="@dimen/profile_container_margin_right"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/txt_password"-->
+                    <!--android:textColor="@color/profile_label_text_color"-->
+                    <!--android:textSize="@dimen/profile_label_text_size" />-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/contractor_password_edit"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:lines="1"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="0599977080"-->
+                    <!--android:textColor="@color/profile_edit_text_text_color"-->
+                    <!--android:textSize="@dimen/profile_edit_text_text_size" />-->
+                    <!--</LinearLayout>-->
+                    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/contractor_password_edit"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginRight="@dimen/new_account_edit_text_margin_right"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:hint="@string/txt_password"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:inputType="textPassword"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:lines="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:maxLines="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColorHint="@color/color_form_hint"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/new_account_edit_text_hint_text_size" />&ndash;&gt;-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/new_account_form_image_width"-->
+                    <!--android:layout_height="@dimen/new_account_form_image_height"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@drawable/ic_lock" />-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="@dimen/profile_container_margin_right"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/txt_password"-->
+                    <!--android:textColor="@color/profile_label_text_color"-->
+                    <!--android:textSize="@dimen/profile_label_text_size" />-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/contractor_re_enter_password_edit"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:lines="1"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="0599977080"-->
+                    <!--android:textColor="@color/profile_edit_text_text_color"-->
+                    <!--android:textSize="@dimen/profile_edit_text_text_size" />-->
+                    <!--</LinearLayout>-->
+                    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/contractor_re_enter_password_edit"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginRight="@dimen/new_account_edit_text_margin_right"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:hint="@string/txt_re_enter_password"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:inputType="textPassword"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:lines="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:maxLines="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColorHint="@color/color_form_hint"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/new_account_edit_text_hint_text_size" />&ndash;&gt;-->
+
+                    <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_business_name"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_business_name"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/contractor_business_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="textPersonName"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/contractor_business_name"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_business_name"-->
+                        <!--android:inputType="text"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_home"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_owner_name"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/owner_name_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="textPersonName"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/owner_name_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_owner_name"-->
+                        <!--android:inputType="text"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_telephone"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_owner_phone"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/owner_number_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="phone"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/owner_number_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_owner_phone"-->
+                        <!--android:inputType="phone"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_business_name"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_commissioner_name"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/commissioner_name_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="textPersonName"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+                        <!--<EditText-->
+                        <!--android:id="@+id/commissioner_name_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_commissioner_name"-->
+                        <!--android:inputType="textPersonName"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_telephone"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_commissioner_phone"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/commissioner_phone_number_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="phone"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/commissioner_phone_number_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_commissioner_phone"-->
+                        <!--android:inputType="phone"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_flag"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_nationality"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/commissioner_nationality_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+                        <!--<EditText-->
+                        <!--android:id="@+id/commissioner_nationality_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_nationality"-->
+                        <!--android:inputType="text"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_employees_number"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/commissioner_employees_number_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/commissioner_employees_number_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_employees_number"-->
+                        <!--android:inputType="number"-->
+                        <!--android:lines="1"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_age"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/company_age_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/company_age_text"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_age"-->
+                        <!--android:inputType="number"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_vertical"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/profile_container_margin_right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_commercial_record_number"
+                                android:textColor="@color/profile_label_text_color"
+                                android:textSize="@dimen/profile_label_text_size" />
+
+                            <EditText
+                                android:id="@+id/commercial_record_number_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/profile_edit_text_text_color"
+                                android:textSize="@dimen/profile_edit_text_text_size" />
+                        </LinearLayout>
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/commercial_record_number_edit"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                        <!--android:hint="@string/txt_commercial_record_number"-->
+                        <!--android:inputType="number"-->
+                        <!--android:textColorHint="@color/color_form_hint"-->
+                        <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_location"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/new_account_edit_text_margin_right"
+                                android:hint="@string/txt_city"
+                                android:textColor="@color/color_form_hint"
+                                android:textColorHint="@color/color_form_hint"
+                                android:textSize="@dimen/new_account_edit_text_hint_text_size" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+
+                                    <CheckBox
+                                        android:id="@+id/riyadh_check_box"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/txt_riyadh"
+                                        android:textSize="@dimen/new_account_edit_text_hint_text_size" />
+
+                                    <CheckBox
+                                        android:id="@+id/jeddah_check_box"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/txt_jeddah"
+                                        android:textSize="@dimen/new_account_edit_text_hint_text_size" />
+
+                                    <CheckBox
+
+                                        android:id="@+id/dammam_check_box"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/txt_dammam"
+                                        android:textSize="@dimen/new_account_edit_text_hint_text_size" />
+
+                                    <!--<RadioGroup-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:orientation="horizontal">-->
+
+                                    <!--<RadioButton-->
+                                    <!--android:id="@+id/riyadh_check_box"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:text="@string/txt_riyadh"-->
+                                    <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                                    <!--<RadioButton-->
+                                    <!--android:id="@+id/jeddah_check_box"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:text="@string/txt_jeddah"-->
+                                    <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                                    <!--<RadioButton-->
+                                    <!--android:id="@+id/dammam_check_box"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:text="@string/txt_dammam"-->
+                                    <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+
+                                    <!--</RadioGroup>-->
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/new_account_form_image_width"
+                            android:layout_height="@dimen/new_account_form_image_height"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_add_photo"
+                            android:tint="@color/gray_tint_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/new_account_edit_text_margin_right"
+                                android:hint="@string/txt_img_of_athorization_letter"
+                                android:textColor="@color/color_form_hint"
+                                android:textColorHint="@color/color_form_hint"
+                                android:textSize="@dimen/new_account_edit_text_hint_text_size" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="16dp">
+
+                                <ImageView
+                                    android:id="@+id/LetterPhoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/gray_tint_color" />
+                                <!--<Button-->
+                                <!--android:id="@+id/upload_latter"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_alignParentRight="true"-->
+                                <!--android:layout_marginRight="@dimen/new_account_edit_text_margin_right"-->
+                                <!--android:drawablePadding="8dp"-->
+                                <!--android:drawableRight="@drawable/ic_upload"-->
+                                <!--android:drawableTint="@color/gray_tint_color"-->
+                                <!--android:text="@string/action_download"-->
+                                <!--android:textColor="@color/colorPrimaryText"-->
+                                <!--android:textSize="@dimen/new_account_edit_text_hint_text_size" />-->
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#7448484d"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/txt_examples"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/new_account_edit_text_hint_text_size" />
+
+                <ImageView
+                    android:id="@+id/first_image"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:id="@+id/second_image"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:id="@+id/third_image"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/action_save"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

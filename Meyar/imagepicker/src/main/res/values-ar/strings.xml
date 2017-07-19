@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ImagePicker</string>
+
+    <string name="permission_write_external_rationale">Allow access external storage to select images</string>
+
+    <string name="ok">تم</string>
+    <string name="done">تم</string>
+    <string name="camera">كاميرا</string>
+    <string name="image_directory">كاميرا</string>
+
+    <string name="title_folder">مجلد</string>
+    <string name="title_select_image">اضغط لاختيار الصورة</string>
+    <string name="title_permission_denied">Permission denied</string>
+
+    <string name="selected">%d تم اختيار</string>
+    <string name="selected_with_limit">%1$d/%2$d تم اختيار</string>
+
+    <string name="error_create_image_file">Failed to create image file</string>
+    <string name="error_no_camera">لم توجد كاميرا</string>
+    <string name="error_null_cursor">Oops, something went wrong!</string>
+
+    <string name="msg_empty_images">لاتوجد صور</string>
+    <string name="msg_no_write_external_permission">Please grant storage permission to select images</string>
+    <string name="msg_no_camera_permission">Please grant camera permission to capture image</string>
+    <string name="msg_limit_images">Image selection limit</string>
+
+</resources>

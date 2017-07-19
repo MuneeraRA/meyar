@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.firstcode.meyar">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name=".base.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".presentation.activities.HomePageActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".presentation.activities.ServiceTypeActivity"
+            android:label="@string/title_activity_service_type"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".presentation.activities.LoginActivity" />
+        <activity android:name=".presentation.activities.ContractorsActivity" />
+        <activity android:name=".presentation.activities.ContractorsDetailsActivity" />
+        <activity android:name=".presentation.activities.ForgetPasswordActivity" />
+        <activity android:name=".presentation.activities.EnterPinCodeActivity" />
+        <activity android:name=".presentation.activities.SubmitNewPasswordActivity" />
+        <activity android:name=".presentation.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

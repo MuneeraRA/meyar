@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contractor_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_user_place_holder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contractor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="محمد زهدي قديح"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/contractor_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تصنيف المهنة"
+                android:textColor="@color/gray_text_color"
+                android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.whinc.widget.ratingbar.RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    app:rb_click_rating="false"
+                    app:rb_count="3"
+                    app:rb_empty="@drawable/empty"
+                    app:rb_fill="@drawable/fill"
+                    app:rb_max_count="5"
+                    app:rb_space="2dp"
+                    app:rb_touch_rating="false" />
+
+                <!--<me.zhanghai.android.materialratingbar.MaterialRatingBar-->
+                <!--style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:isIndicator="true"-->
+                <!--android:maxHeight="25dp"-->
+                <!--android:minHeight="25dp"-->
+                <!--android:rating="2"-->
+                <!--app:mrb_progressBackgroundTint="@color/yellow"-->
+                <!--app:mrb_progressTint="@color/yellow" />-->
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_button_animation"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@color/gray_text_color" />
+
+
+</LinearLayout>

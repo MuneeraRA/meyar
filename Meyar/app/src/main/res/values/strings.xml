@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Meyar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_favorite_contractors">المقاولين المفضلين</string>
+    <string name="nav_support">الدعم والمراسلة</string>
+    <string name="nav_login">تسجيل الدخول</string>
+    <string name="nav_logout">تسجيل الخروج</string>
+    <string name="nav_register_as_contractor">التسجيل كمقاول</string>
+    <string name="contractor">المقاولين</string>
+    <string name="contractor_detail">تفاصيل المقاول</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="welcome_text">مرحبا بكم .... قم باختيار احد التصنيفات الخاصة بمعيار</string>
+    <string name="title_activity_service_type">أختر نوع الخدمة</string>
+    <string name="search">بحث</string>
+    <string name="service_type">نوع الخدمة</string>
+
+
+    <string name="txt_contact_info"> معلومات التواصل </string>
+    <string name="txt_phone"> جوالك </string>
+    <string name="txt_mail"> الإيميل </string>
+    <string name="txt_ur_mail"> بريدك الإلكتروني </string>
+    <string name="txt_message_title"> عنوان الرسالة </string>
+    <string name="txt_message_content"> نص الرسالة </string>
+    <string name="txt_leave_message"> اترك رسالتك </string>
+    <string name="txt_add_img"> إضافة صورة شخصية </string>
+    <string name="txt_name"> الاسم </string>
+    <string name="txt_password"> كلمة المرور </string>
+    <string name="txt_re_enter_password"> إعادة كلمة المرور </string>
+    <string name="txt_city"> المدينة </string>
+    <string name="txt_riyadh"> الرياض </string>
+    <string name="txt_jeddah"> جدة </string>
+    <string name="txt_dammam"> المنطقة الشرقية </string>
+    <string name="txt_business_name"> الاسم التجاري </string>
+    <string name="txt_owner_name"> اسم المالك </string>
+    <string name="txt_owner_phone"> جوال المالك </string>
+    <string name="txt_commissioner_name"> اسم المفاوض من قبل المالك </string>
+    <string name="txt_commissioner_phone"> جوال المفاوض </string>
+    <string name="txt_nationality"> جنسيته </string>
+    <string name="txt_employees_number"> عدد العمالة </string>
+    <string name="txt_age"> سنة تأسيس المؤسسة: (30-01-2017) </string>
+    <string name="txt_img_of_athorization_letter"> صورة لخطاب التفويض من المالك </string>
+    <string name="txt_commercial_record_number"> رقم السجل التجاري </string>
+    <string name="msg_registration_finish"> تم تسجيلك بنجاح و سيتم اشعارك عند تفعيل مستخدمك من مدير النظام </string>
+    <string name="msg_sign_out"> شكرا لك .. تم تسجيل خروجك </string>
+    <string name="txt_back_home"> عودة للرئيسية </string>
+    <string name="msg_password_does_not_match"> كلمة المرور غير مطابقة </string>
+    <string name="action_back_previous"> عودة للسابق </string>
+    <string name="msg_pinnumber_does_not_match"> رمز التفيعل غير صحيح </string>
+
+    <string name="msg_sending_pinnumber"> تم إرسال رمز التفعيل على بريدك الإلكتروني </string>
+    <string name="msg_enter_your_email"> قم بإدخال بريدك الإلكتروني ليصلك رمز التفعيل الخاص باستعادة كلمة المرور </string>
+    <string name="msg_enter_pin_code"> قم بإدخال رمز التفعيل المرسل لاستعادة كلمة المرور الخاصة بك </string>
+
+    <string name="action_send_now"> ارسل الآن </string>
+    <string name="action_sgin_in"> تسجيل الدخول </string>
+    <string name="action_download"> تحميل </string>
+
+    <string name="txt_forget_password"> نسيت كلمة المرور؟ </string>
+    <string name="action_recover_passwod"> استعادة </string>
+    <string name="restore_password_title">استعادة كلمة المرور</string>ا
+    <string name="error_wrong_info"> البيانات المدخلة غير صحيحة </string>
+    <string name="txt_new_password"> كلمة المرور الجديدة </string>
+    <string name="msg_saving_password_sucsess"> تم حفظ كلمة المرور بنجاح </string>
+    <string name="msg_checking_network"> فضلا تأكد من الاتصال بشبكة الانترنت </string>
+    <string name="title_favorites"> المفضلة </string>
+    <string name="txt_examples"> نماذج للأعمال </string>
+    <string name="action_save"> حفظ </string>
+    <string name="add_to_favorite">اضف الى المفضلة</string>
+    <string name="remove_favorite">أزالة من المفضلة</string>
+    <string name="we_send_active_code">تم ارسال رمز التفعيل الى بريدك الالكتروني</string>
+    <string name="active_code_is_not_valid">رمز التفعيل غير صحيح</string>
+    <string name="new_password_successfully_change">تم حفظ كلمة المرور الجديدة بنجاح</string>
+    <string name="password_doest_match">كلمة المرور غير متطابقة</string>
+    <string name="please_check_internet_connection">فضلاً تأكد من اتصال الانترنت</string>
+    <string name="mobile_number_is_used_before">رقم الجوال مستخدم من قبل</string>
+    <string name="successfully_register_message">تم تسجيلك بنجاح وسيتم اشعارك عند تفعيل مستخدمك من مديرالنظام</string>
+    <string name="back_to_main">عودة للرئيسية</string>
+    <string name="logout_message">شكراً لك ... تم تسجيل خروجك</string>
+    <string name="contact_us_message">تم ارسال بريدك,سيتم التواصل معكم قريباُعلى بريدك المسجل</string>
+    <string name="done">تم</string>
+    <string name="cat1">بناء عظم</string>
+    <string name="cat2">مقاولين بنود التشطيب</string>
+    <string name="cat3">شركات تنفيد</string>
+    <string name="cat4">موردين</string>
+    <string name="no_result_found">لا توجد نتائج</string>
+    <string name="please_try_again">الرجاء المحاولة مرة اخرى</string>
+    <string name="are_you_sure_to_make_call">هل انت متاكد من الاتصال على الرقم التالى</string>
+    <string name="msg_empty_name"> فضلا تأكد من إضافة الاسم الشخصي </string>
+    <string name="msg_empty_mail"> فضلا تأكد من إضافة بريدك الإلكتروني </string>
+    <string name="msg_wrong_mail"> الإيميل المدخل غير صحيح </string>
+    <string name="msg_empty_telephone"> فضلا تأكد من إضافة رقم جوالك </string>
+    <string name="msg_wrong_telephone"> رقم جوالك المدخل غير صحيح </string>
+    <string name="msg_empty_password"> فضلا تأكد من إضافة كلمة المرور </string>
+    <string name="msg_empty_passwordConf"> فضلا تأكد من تأكيد كتابة كلمة المرور </string>
+    <string name="msg_empty_password_not_matching"> كلمتا المرور غير متطابقتين </string>
+    <string name="msg_wrong_ownerPhone"> رقم المالك المدخل غير صحيح </string>
+    <string name="msg_wrong_negotiatorPhone"> رقم المفاوض المدخل غير صحيح </string>
+    <string name="msg_empty_bussinseName"> فضلا تأكد من إضافة الاسم التجاري </string>
+    <string name="msg_empty_ownerName"> فضلا تأكد من إضافة اسم المالك </string>
+    <string name="msg_empty_ownerPhone"> فضلا تأكد من إضافة رقم المالك </string>
+    <string name="msg_empty_negotiatorName"> فضلا تأكد من إضافة اسم المفاوض من قبل المالك </string>
+    <string name="msg_empty_negotiatorPhone"> فضلا تأكد من إضافة جوال المفاوض </string>
+    <string name="msg_empty_nationality"> فضلا تأكد من إضافة الجنسية </string>
+    <string name="msg_empty_employesNum"> فضلا تأكد من إضافة عدد العمالة </string>
+    <string name="msg_empty_age"> فضلا تأكد من إضافة عمر المؤسسة </string>
+    <string name="msg_empty_commercailRecordNum"> فضلا تأكد من إضافة رقم السجل التجاري </string>
+    <string name="msg_empty_city"> فضلا تأكد من تحديد المدينة </string>
+    <string name="msg_profile_updated_successfully"> تم تعديل الملف الشخصي بنجاح </string>
+    <string name="msg_login_successfully"> تم تسجيل دخولك بنجاح </string>
+    <string name="msg_empty_message">تأكد من كتابة محتوى الرسالة </string>
+    <string name="msg_invalied_pin"> الرقم المدخل غير صحيح </string>
+    <string name="msg_invalied_pin_request"> رمز التفعيل غير صحيح ، حاول مره اخرى </string>
+
+
+</resources>
